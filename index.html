@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile Legends Hero Info</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="logo-container">
+        <img src="images/mlbb-logo.png" alt="MLBB Logo" class="logo" style="max-width: 120px;">
+      </div>
+      <h1>Hero Guide</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="heroes.html">Heroes</a> |
+        <a href="about.html">About</a>
+      </nav>
+      <button onclick="toggleTheme()" class="theme-toggle">Toggle Dark/Light Mode</button>
+    </header>
+
+    <main>
+      <!-- 🔥 Intro Section -->
+      <section class="intro">
+        <h2>Discover the World of Mobile Legends</h2>
+        <p>Welcome to the ultimate Mobile Legends hero guide! Learn about your favorite heroes, their skills, roles, and background stories.</p>
+        <p>Whether you're a beginner or a seasoned player, this site has something for everyone.</p>
+        <p>Explore profiles, test your playstyle, and dive deeper into the MLBB universe.</p>
+      </section>
+
+      <!-- 🧠 Did You Know Section -->
+      <section style="margin-top: 40px;">
+        <h3>💡 Did You Know?</h3>
+        <ul style="list-style: none; padding: 0; font-size: 16px;">
+          <li>🌀 Mobile Legends has over <strong>100 playable heroes</strong> across different roles!</li>
+          <li>⚔️ Some heroes are inspired by real mythological or historical figures.</li>
+          <li>🏆 MLBB has been played in professional tournaments like <strong>MPL</strong> and <strong>MSC</strong>.</li>
+        </ul>
+      </section>
+
+      <!-- 🧩 Hero Roles Overview -->
+      <section style="margin-top: 40px;">
+        <h3>🧭 Hero Roles at a Glance</h3>
+        <div class="role-grid">
+          <div class="role-card fighter">
+            <h4>Fighter</h4>
+            <p>Balanced between offense and defense. Great for front-lining and sustaining in battles.</p>
+          </div>
+          <div class="role-card assassin">
+            <h4>Assassin</h4>
+            <p>High burst damage and mobility. Ideal for eliminating backline enemies quickly.</p>
+          </div>
+          <div class="role-card marksman">
+            <h4>Marksman</h4>
+            <p>Ranged attackers with powerful late-game potential and sustained damage.</p>
+          </div>
+          <div class="role-card tank">
+            <h4>Tank</h4>
+            <p>High durability frontliners who absorb enemy attacks and defend teammates.</p>
+          </div>
+          <div class="role-card mage">
+            <h4>Mage</h4>
+            <p>Spellcasters with strong magic damage and crowd control abilities.</p>
+          </div>
+          <div class="role-card support">
+            <h4>Support</h4>
+            <p>Healers, buffers, or crowd controllers who enable the team to shine.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 🎯 Quiz Section -->
+      <section class="quiz-section" style="margin-top: 50px;">
+        <h3>🎯 Which MLBB Hero Matches Your Style?</h3>
+        <button onclick="startQuiz()">Take the Quiz</button>
+        <p id="quiz-result" class="quiz-result"></p>
+      </section>
+    </main>
+
+    <footer>
+      © Arnoldus Svendly Purwasunu | ID: 21229570
+    </footer>
+  </div>
+</body>
+</html>
