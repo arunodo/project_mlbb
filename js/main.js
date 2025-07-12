@@ -2,37 +2,6 @@ window.onload = function () {
   alert("Welcome to Arnoldus's Mobile Legends Hero Guide!");
 };
 
-function startQuiz() {
-  const role = prompt("Do you prefer Please enter fighter, assassin, marksman, tank, mage, or support?");
-  let result = "";
-
-    switch (role?.toLowerCase()) {
-  case "fighter":
-    result = "💪 You're strong, fearless, and somehow still alive after getting ganked 24/7. Respect!";
-    break;
-  case "assassin":
-    result = "🗡️ You appear, delete someone, then vanish like Wi-Fi during a ranked match. Classic!";
-    break;
-  case "marksman":
-    result = "🎯 You deal insane damage... if the team babysits you like a newborn. One stun = instant vacation.";
-    break;
-  case "tank":
-    result = "🛡️ You soak all the damage, engage first, die first, and still get blamed. You're the team's punching bag and proud.";
-    break;
-  case "mage":
-    result = "🧠 You're smart, dangerous, and love pressing buttons from a safe distance. Big brain plays only.";
-    break;
-  case "support":
-    result = "💖 You heal, shield, and save everyone... but when you die? Silence. Not even a 'ty'.";
-    break;
-  default:
-    result = "❓ Role not found. Are you trying to play jungle with recall and flicker? Bold move!";
-}
-
-
-  document.getElementById("quiz-result").innerText = result;
-}
-
 function toggleTheme() {
   document.body.classList.toggle("light-mode");
 }
